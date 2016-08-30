@@ -12,15 +12,14 @@ import static kiss.API.*;
  * @author grace
  */
 public class HelloWorld {
+    
+    
     void testRun() {
         try (Close out = outExpect("Hello!")) {
             run();
         }
     }
     
-    void testAdd(){
-        assert 1+1 ==2;
-    }
     void run() {
         println("Hello!");
    
