@@ -25,4 +25,10 @@ public class HelloWorld {
    
     }
     
+    void testBooleans(){
+        assert true !=false;
+        assert true == true;
+        assert false == false;
+}
+    
 }
