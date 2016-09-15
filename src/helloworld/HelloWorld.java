@@ -91,6 +91,10 @@ public class HelloWorld {
         int y = x;
         assert y == -1;
     }
-
+    void testClock(){
+    Clock clock = test(new Clock ());
 }
     
+
+}
+
