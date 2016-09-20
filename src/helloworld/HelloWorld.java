@@ -91,9 +91,44 @@ public class HelloWorld {
         int y = x;
         assert y == -1;
     }
+    
+    void untesttestLoop(){
+        try (Close out = outExpect (0, EOL, 1, EOL, 3, EOL)) {
+            int n =4;
+            int i = 0;
+            while (i < n){
+                if (i == 2){
+                    ++i;
+                    continue;
+                }
+                println(i);
+                ++i;
+            }
+        }
+    }
+    
+    void testString(){
+        String hi = "hello";
+        assert hi.length() == 5;
+        assert hi.substring (1, 3).equals("el");
+        
+        hi = hi + " world";
+        
+        StringBuilder sb = new StringBuilder();
+        sb.append("hello");
+        sb.append (" world");
+        sb.append(" #");
+        sb.append(13);
+        String hw = sb.toString();
+        println(hw);
+    }
+    
     void testClock(){
     Clock clock = test(new Clock ());
 }
+    void untestTimezoneClock() {
+        TimezoneClock tzClock = testAlways (new TimezoneClock());
+    }
     
 
 }
