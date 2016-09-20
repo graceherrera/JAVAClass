@@ -1,1 +1,2 @@
-# JAVA
+# JAVAClass
+Class Assignments
