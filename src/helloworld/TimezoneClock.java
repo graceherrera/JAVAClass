@@ -14,7 +14,7 @@ import static kiss.API.pause;
  */
 public class TimezoneClock extends Clock {
     
-    double TimezoneShift = 0.0;
+    double timezoneShift = 0.0;
     @Override
     double getHours() {
         return 0;
@@ -42,6 +42,15 @@ public class TimezoneClock extends Clock {
         double now = clock.getHours();
         double shouldBe = 1.0 + 1.0/3600.0;
         assert abs (now-shouldBe) < 0.1 / 3600.0;
+    }
+    @Override
+    public boolean equals(Object object){
+        if (object instanceof TimezoneClock){
+            return timezoneShift == ((TimezoneClock)object).timezoneShift
+                    && super.equals(object);
+        }else{
+            return false;
+        }
     }
 }
 
