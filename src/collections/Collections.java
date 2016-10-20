@@ -21,7 +21,7 @@ public class Collections {
         println("Hello Collections");
     }
     
-    void createApplications(){
+    void testcreateApplications(){
        ArrayList<String> applications = new ArrayList<String>();
        
        applications.add("CU Georgia");
@@ -45,6 +45,11 @@ public class Collections {
        applications.add("UA Arizona");
        applications.add("MU Wisconsin");
        applications.add("OSU Oregon");
+       
+       for(String application : applications){
+          println(application);
+           
+       }
        
     }
 }
