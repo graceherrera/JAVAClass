@@ -21,9 +21,30 @@ public class Collections {
         println("Hello Collections");
     }
     
-    void createCollection(){
-       ArrayList<Integer> applications = new ArrayList<Integer>();
+    void createApplications(){
+       ArrayList<String> applications = new ArrayList<String>();
        
+       applications.add("CU Georgia");
+       applications.add("AU Alabama");
+       applications.add("FIU Florida");
+       applications.add("UND North Dakota");
+       applications.add("SFI New Mexico");
+       applications.add("UB California");
+       applications.add("UNT Texas");
+       applications.add("UM Maryland");
+       applications.add("USF Florida");
+       applications.add("UM Massachusetts");
+       applications.add("UM Minnesotta");
+       applications.add("NCU North Carolina");
+       applications.add("BSU Idaho");
+       applications.add("NMSU New Mexico");
+       applications.add("RIT New York");
+       applications.add("SU Maryland");
+       applications.add("CM Pennsylvania");
+       applications.add("LSU Lousiana");
+       applications.add("UA Arizona");
+       applications.add("MU Wisconsin");
+       applications.add("OSU Oregon");
        
     }
 }
