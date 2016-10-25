@@ -48,8 +48,13 @@ public class Collections {
        
        for(String application : applications){
           println(application);
-           
        }
+     
+       assert applications.contains("UA Arizona") == true;
+       assert applications.contains("LANL New Mexico") == false;
        
+        
+     
     }
+
 }
