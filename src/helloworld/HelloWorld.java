@@ -130,6 +130,12 @@ public class HelloWorld {
         TimezoneClock tzClock = testAlways (new TimezoneClock());
     }
     
+    void testBoxing(){
+        Boxing boxing = test(new Boxing ());
+    }
+    
+    
+    
 
 }
 

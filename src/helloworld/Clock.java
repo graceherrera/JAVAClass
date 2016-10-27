@@ -5,12 +5,15 @@
  */
 package helloworld;
 
+import java.util.ArrayList;
 import static kiss.API.*;
 /**
  *
  * @author grace
  */
 public class Clock extends java.lang.Object implements Comparable<Clock>{
+    
+    // here is the change. 
     //instance variables
     private double hours=0;
     private double minutes=0;
@@ -28,6 +31,9 @@ public class Clock extends java.lang.Object implements Comparable<Clock>{
         minutes = (hours-Math.floor(hours))*60.0;
         seconds = (minutes-Math.floor(minutes))*60.0;
     }
+    Clock(){setHours(0);}
+    Clock(double _hours) {setHours(_hours);}
+    Clock(double _hours, double _minutes){setHours(_hours + _minutes / 60.0);}
  
     double getHours(){
         return started ? (hours + (time() - t0)/3600.0): hours;
@@ -108,7 +114,21 @@ public class Clock extends java.lang.Object implements Comparable<Clock>{
         assert clock1.equals(clock3) == true; // we overrode what equals means so in this instance == will not mean equal anymore
         assert (clock1 == clock3) == false; //we cannot change the operator == are they referring to the same thing?
         
+    }     
+    @Override
+            public String toString(){
+                return String.format("%02d:%02d", (int)getHours(), (int)getMinutes());
+            }
+    void testSortClocks(){
+        ArrayList<Clock> clocks = new ArrayList<Clock>();
+        clocks.add(new Clock(1));
+        clocks.add(new Clock(1, 30));
+        clocks.add(new Clock(2));
+        clocks.add(new Clock(1, 15));
+        clocks.sort(null);
+        for (Clock clock : clocks){
+            println(clock);
+        }
     }
-//Definition on how to compare clocks 
    
 }
