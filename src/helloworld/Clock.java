@@ -5,6 +5,8 @@
  */
 package helloworld;
 
+// java comment
+
 import static kiss.API.*;
 /**
  *
