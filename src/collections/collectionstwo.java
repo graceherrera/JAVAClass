@@ -35,6 +35,8 @@ public class collectionstwo {
            System.out.println("The two boolean arrays are equal");
        else
            System.out.println("The two boolean arrays are different");
+       int[] numbers2 = Arrays.copyOf(numbers, numbers.length*2);
+       System.out.println("Copy array: "+ Arrays.toString(numbers2));
        
         
     }
