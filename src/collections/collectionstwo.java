@@ -18,5 +18,11 @@ public class collectionstwo {
         char[] vowels = {'a', 'e', 'i', 'o', 'u'};
         boolean[] responses = {true, false, false, true, true};
         boolean[] responses2 = {false, true, false, true, true};
+        
+        System.out.println("Before sorting: " + Arrays.toString(numbers));
+        Arrays.sort(numbers);
+        System.out.println("After sorting: " +  Arrays.toString(numbers));
+        
+        
     }
 }
