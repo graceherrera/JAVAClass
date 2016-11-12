@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package collections;
-import java.lang.*;
+
 import java.util.*;
 
 /**
