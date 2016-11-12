@@ -27,6 +27,10 @@ public class collectionstwo {
         int keyPosition = Arrays. binarySearch(numbers, key);
         System.out.println("Your key was found in position " + keyPosition);
         
+       if(Arrays.equals(responses, responses2)== true)
+           System.out.println("The two boolean arrays are equal");
+       else
+           System.out.println("The two boolean arrays are different");
        
         
     }
