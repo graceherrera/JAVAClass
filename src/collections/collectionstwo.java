@@ -23,6 +23,11 @@ public class collectionstwo {
         Arrays.sort(numbers);
         System.out.println("After sorting: " +  Arrays.toString(numbers));
         
+        int key = 25;
+        int keyPosition = Arrays. binarySearch(numbers, key);
+        System.out.println("Your key was found in position " + keyPosition);
+        
+       
         
     }
 }
