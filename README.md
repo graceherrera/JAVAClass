@@ -5,6 +5,7 @@ Collections without the kiss library: Assignment 3: https://github.com/graceherr
 Threads assignment:
 Main Threads class: https://github.com/graceherrera/JAVAClass/blob/testing/src/threads/Threads.java
 Secondary process threads: https://github.com/graceherrera/JAVAClass/blob/testing/src/threads/MyThread.java
+Threads Interface/3rd Process: https://github.com/graceherrera/JAVAClass/blob/testing/src/threads/MyRunable.java
 
 
 
