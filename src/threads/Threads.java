@@ -15,8 +15,10 @@ public class Threads {
         int iterations = 3;
         
         MyThread thread = new MyThread();
-        
         thread.start();
+        
+        MyRunable runable = new MyRunable();
+        new Thread(runable).start();
         
         try {
             for (int i = 0; i < iterations; i++) {
